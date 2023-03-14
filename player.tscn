@@ -1,0 +1,219 @@
+[gd_scene load_steps=36 format=3 uid="uid://bnfr7a2ah6ebs"]
+
+[ext_resource type="Script" path="res://player.gd" id="1_0112p"]
+[ext_resource type="Texture2D" uid="uid://brfm5y1pjilsy" path="res://Art/Treasure Hunters/Captain Clown Nose/Sprites/Captain Clown Nose/Captain Clown Nose without Sword/01-Idle/Idle 01.png" id="1_wd7gh"]
+[ext_resource type="Texture2D" uid="uid://pdeqli6rbhhc" path="res://Art/cat02_spritesheets/cat02_fall_strip3.png" id="2_4pr8h"]
+[ext_resource type="Texture2D" uid="uid://kp6cb7rjcv4l" path="res://Art/cat02_spritesheets/cat02_idle_strip8.png" id="2_65t3o"]
+[ext_resource type="Texture2D" uid="uid://caj632x4eshen" path="res://Art/Treasure Hunters/Captain Clown Nose/Sprites/Captain Clown Nose/Captain Clown Nose without Sword/01-Idle/Idle 02.png" id="2_r2jqp"]
+[ext_resource type="Texture2D" uid="uid://cfa4s33y0tu07" path="res://Art/Treasure Hunters/Captain Clown Nose/Sprites/Captain Clown Nose/Captain Clown Nose without Sword/01-Idle/Idle 03.png" id="3_0pb8e"]
+[ext_resource type="Texture2D" uid="uid://bkefusqsv6hy4" path="res://Art/cat02_spritesheets/cat02_run_strip4.png" id="3_fgdhs"]
+[ext_resource type="Texture2D" uid="uid://36vgtfmghxsr" path="res://Art/Treasure Hunters/Captain Clown Nose/Sprites/Captain Clown Nose/Captain Clown Nose without Sword/01-Idle/Idle 04.png" id="4_okmdc"]
+[ext_resource type="Texture2D" uid="uid://bg7w4gt5tjdas" path="res://Art/cat02_spritesheets/cat02_jump_strip4.png" id="4_yx022"]
+[ext_resource type="Texture2D" uid="uid://dnb1u15yhdn71" path="res://Art/Treasure Hunters/Captain Clown Nose/Sprites/Captain Clown Nose/Captain Clown Nose without Sword/01-Idle/Idle 05.png" id="5_p5yyi"]
+[ext_resource type="Texture2D" uid="uid://ck6qoi5uqvq2x" path="res://Art/Treasure Hunters/Captain Clown Nose/Sprites/Captain Clown Nose/Captain Clown Nose without Sword/02-Run/Run 01.png" id="6_pff2n"]
+[ext_resource type="Texture2D" uid="uid://bkg4vk75ep5ve" path="res://Art/Treasure Hunters/Captain Clown Nose/Sprites/Captain Clown Nose/Captain Clown Nose without Sword/02-Run/Run 02.png" id="7_n2ux5"]
+[ext_resource type="Texture2D" uid="uid://xm8fm14xor4x" path="res://Art/Treasure Hunters/Captain Clown Nose/Sprites/Captain Clown Nose/Captain Clown Nose without Sword/02-Run/Run 03.png" id="8_bubmi"]
+[ext_resource type="Texture2D" uid="uid://dnkdne5jaw2ac" path="res://Art/Treasure Hunters/Captain Clown Nose/Sprites/Captain Clown Nose/Captain Clown Nose without Sword/02-Run/Run 04.png" id="9_7f567"]
+[ext_resource type="Texture2D" uid="uid://c71sbjlhb62te" path="res://Art/Treasure Hunters/Captain Clown Nose/Sprites/Captain Clown Nose/Captain Clown Nose without Sword/02-Run/Run 05.png" id="10_g8ex8"]
+[ext_resource type="Texture2D" uid="uid://bp8ln7tmbfhdf" path="res://Art/Treasure Hunters/Captain Clown Nose/Sprites/Captain Clown Nose/Captain Clown Nose without Sword/02-Run/Run 06.png" id="11_4gllx"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_11qv5"]
+atlas = ExtResource("2_4pr8h")
+region = Rect2(0, 0, 40, 40)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mpwr2"]
+atlas = ExtResource("2_4pr8h")
+region = Rect2(40, 0, 40, 40)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_e07ub"]
+atlas = ExtResource("2_4pr8h")
+region = Rect2(80, 0, 40, 40)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qemda"]
+atlas = ExtResource("2_65t3o")
+region = Rect2(0, 0, 40, 40)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_uh4cb"]
+atlas = ExtResource("2_65t3o")
+region = Rect2(40, 0, 40, 40)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_al361"]
+atlas = ExtResource("2_65t3o")
+region = Rect2(80, 0, 40, 40)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_r6hu0"]
+atlas = ExtResource("2_65t3o")
+region = Rect2(120, 0, 40, 40)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yrsxi"]
+atlas = ExtResource("2_65t3o")
+region = Rect2(160, 0, 40, 40)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_eqf4o"]
+atlas = ExtResource("2_65t3o")
+region = Rect2(200, 0, 40, 40)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sgk88"]
+atlas = ExtResource("2_65t3o")
+region = Rect2(240, 0, 40, 40)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_73nq8"]
+atlas = ExtResource("2_65t3o")
+region = Rect2(280, 0, 40, 40)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_oabbc"]
+atlas = ExtResource("4_yx022")
+region = Rect2(80, 0, 40, 40)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pa0te"]
+atlas = ExtResource("4_yx022")
+region = Rect2(120, 0, 40, 40)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_svy8g"]
+atlas = ExtResource("3_fgdhs")
+region = Rect2(0, 0, 40, 40)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3nghg"]
+atlas = ExtResource("3_fgdhs")
+region = Rect2(40, 0, 40, 40)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_i8q4w"]
+atlas = ExtResource("3_fgdhs")
+region = Rect2(80, 0, 40, 40)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_g7ww5"]
+atlas = ExtResource("3_fgdhs")
+region = Rect2(120, 0, 40, 40)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_gme5e"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_11qv5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mpwr2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_e07ub")
+}],
+"loop": true,
+"name": &"cat_fall",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qemda")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_uh4cb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_al361")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_r6hu0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yrsxi")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_eqf4o")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sgk88")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_73nq8")
+}],
+"loop": true,
+"name": &"cat_idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_oabbc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pa0te")
+}],
+"loop": true,
+"name": &"cat_jump",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_svy8g")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3nghg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_i8q4w")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_g7ww5")
+}],
+"loop": true,
+"name": &"cat_run",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_wd7gh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_r2jqp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_0pb8e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_okmdc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_p5yyi")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("6_pff2n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_n2ux5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_bubmi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_7f567")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_g8ex8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_4gllx")
+}],
+"loop": true,
+"name": &"run",
+"speed": 10.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_u6c5y"]
+radius = 9.0
+height = 18.0
+
+[node name="Player" type="CharacterBody2D"]
+script = ExtResource("1_0112p")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_gme5e")
+animation = &"cat_jump"
+frame_progress = 0.520767
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-2, 4)
+shape = SubResource("CapsuleShape2D_u6c5y")

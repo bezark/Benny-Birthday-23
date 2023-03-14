@@ -1,0 +1,25 @@
+[gd_scene load_steps=3 format=3 uid="uid://baiyphgajpeta"]
+
+[ext_resource type="Texture2D" uid="uid://darrjmy7lllvw" path="res://Art/Treasure Hunters/Wood and Paper UI/Sprites/Big Banner/32.png" id="1_yi4ge"]
+[ext_resource type="FontFile" uid="uid://d0wovl7i2xl6n" path="res://Art/GothicUltraTrendy-74E.ttf" id="2_me0pr"]
+
+[node name="pirate_text" type="Node2D"]
+position = Vector2(0, 1)
+
+[node name="NinePatchRect" type="NinePatchRect" parent="."]
+offset_left = 48.0
+offset_top = 23.0
+offset_right = 1120.0
+offset_bottom = 246.0
+texture = ExtResource("1_yi4ge")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+offset_left = 72.0
+offset_top = 47.0
+offset_right = 1088.0
+offset_bottom = 215.0
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_fonts/normal_font = ExtResource("2_me0pr")
+theme_override_font_sizes/normal_font_size = 96
+text = "Hiii"
+fit_content = true
