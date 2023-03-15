@@ -1,4 +1,4 @@
-[gd_scene load_steps=36 format=3 uid="uid://bay82fd26qrg2"]
+[gd_scene load_steps=37 format=3 uid="uid://bay82fd26qrg2"]
 
 [ext_resource type="Texture2D" uid="uid://djjxtav7xtk58" path="res://Art/interior free.png" id="1_fsag7"]
 [ext_resource type="Script" path="res://Lois.gd" id="2_q56na"]
@@ -221,6 +221,9 @@ animations = [{
 "speed": 7.0
 }]
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_i6a0c"]
+size = Vector2(18, 18)
+
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_bg15m"]
 radius = 5.0
 height = 20.0
@@ -315,11 +318,20 @@ layer_2/tile_data = PackedInt32Array(393221, 0, 0, 393222, 65536, 0, 262158, 0, 
 position = Vector2(144, 80)
 zoom = Vector2(4.05, 4.05)
 
-[node name="map" type="AnimatedSprite2D" parent="."]
+[node name="map" type="Area2D" parent="."]
+position = Vector2(8, 24)
+monitoring = false
+
+[node name="sprite" type="AnimatedSprite2D" parent="map"]
+visible = false
 position = Vector2(256, 120)
 scale = Vector2(0.5, 0.5)
 sprite_frames = SubResource("SpriteFrames_edh5q")
 animation = &"unfold"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="map"]
+position = Vector2(256, 120)
+shape = SubResource("RectangleShape2D_i6a0c")
 
 [node name="Lois" type="CharacterBody2D" parent="."]
 script = ExtResource("2_q56na")
@@ -361,4 +373,5 @@ theme_override_colors/default_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/normal_font_size = 48
 text = "John: OK bye Lois! Be good while we're in New Orleans!"
 
+[connection signal="body_entered" from="map" to="DialogueManager" method="_on_map_body_entered"]
 [connection signal="timeout" from="DialogueManager/Timer" to="DialogueManager" method="_on_timer_timeout"]

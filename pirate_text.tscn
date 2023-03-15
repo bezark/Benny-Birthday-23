@@ -21,5 +21,6 @@ offset_bottom = 215.0
 theme_override_colors/default_color = Color(0, 0, 0, 1)
 theme_override_fonts/normal_font = ExtResource("2_me0pr")
 theme_override_font_sizes/normal_font_size = 96
-text = "Hiii"
+bbcode_enabled = true
+text = "Finally! With my captors gone I can return to the Seven Seas under my true name..."
 fit_content = true
