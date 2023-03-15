@@ -1,8 +1,9 @@
-[gd_scene load_steps=6 format=3 uid="uid://bmn84x8n52t78"]
+[gd_scene load_steps=7 format=3 uid="uid://bmn84x8n52t78"]
 
 [ext_resource type="Texture2D" uid="uid://bhebdsomybnvx" path="res://Art/Treasure Hunters/Pirate Ship/Sprites/Tilesets/Terrain and Back Wall (32x32).png" id="1_6s1c2"]
 [ext_resource type="PackedScene" uid="uid://bnfr7a2ah6ebs" path="res://player.tscn" id="2_7hlpf"]
 [ext_resource type="Texture2D" uid="uid://cjb5yxefdxee7" path="res://Art/Treasure Hunters/Palm Tree Island/Sprites/Background/BG Image.png" id="3_sgaka"]
+[ext_resource type="AudioStream" uid="uid://c6puig4ivqowy" path="res://Art/Mr.Chippy - Pirates of the Caribbean - He's A Pirate (8-Bit Chiptune Cover).mp3" id="4_pjmic"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_cy1gb"]
 texture = ExtResource("1_6s1c2")
@@ -1313,12 +1314,19 @@ position = Vector2(16, -30)
 position = Vector2(-16, 30)
 zoom = Vector2(3, 3)
 
-[node name="BgImage" type="Sprite2D" parent="."]
-z_index = -1
-position = Vector2(101.5, 9.5)
-scale = Vector2(1.51302, 1.75781)
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="Player"]
+position = Vector2(-16, 30)
+stream = ExtResource("4_pjmic")
+autoplay = true
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+follow_viewport_enabled = true
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_scale = Vector2(0.01, 0.01)
+motion_mirroring = Vector2(384, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
+position = Vector2(7.5, 0.499998)
+scale = Vector2(1.02344, 1.67969)
 texture = ExtResource("3_sgaka")
-
-[node name="ParallaxBackground" type="ParallaxBackground" parent="BgImage"]
-
-[node name="ParallaxLayer" type="ParallaxLayer" parent="BgImage/ParallaxBackground"]

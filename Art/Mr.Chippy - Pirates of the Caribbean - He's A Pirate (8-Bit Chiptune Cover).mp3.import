@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://c6puig4ivqowy"
+path="res://.godot/imported/Mr.Chippy - Pirates of the Caribbean - He's A Pirate (8-Bit Chiptune Cover).mp3-285823e38a0809e3966bb7e9cc6ac9f1.mp3str"
+
+[deps]
+
+source_file="res://Art/Mr.Chippy - Pirates of the Caribbean - He's A Pirate (8-Bit Chiptune Cover).mp3"
+dest_files=["res://.godot/imported/Mr.Chippy - Pirates of the Caribbean - He's A Pirate (8-Bit Chiptune Cover).mp3-285823e38a0809e3966bb7e9cc6ac9f1.mp3str"]
+
+[params]
+
+loop=true
+loop_offset=0.0
+bpm=0.0
+beat_count=0
+bar_beats=4

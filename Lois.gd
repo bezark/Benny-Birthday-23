@@ -28,5 +28,8 @@ func _physics_process(delta):
 		velocity.y = ydirection * SPEED
 	else:
 		velocity.y = move_toward(velocity.y, 0, SPEED)
-
+	if(velocity.x<0):
+		$AnimatedSprite2D.flip_h = true
+	if(velocity.x>0):
+		$AnimatedSprite2D.flip_h = false
 	move_and_slide()
