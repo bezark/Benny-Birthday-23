@@ -38,11 +38,13 @@ func _on_timer_timeout():
 		10:
 			$pirate_text/RichTextLabel.set_text("Now to find my map...")
 			$"../map/sprite".show()
-			$"../map".monitoring=true
+			
 		11:
 			$pirate_text.hide()
 			$Timer.stop()
+			$"../map".monitoring=true
 		14:
+			print("changing")
 			get_tree().change_scene_to_file("res://levels/level_1.tscn")
 
 func _on_map_body_entered(body):
